@@ -3,12 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/EndavaOnlineLibrary-UI/src/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h2>Pagina noua goala</h2>
-    <h2>Pagina noua goala</h2>
-    <h2>Pagina noua goala</h2>
-    <h2>Pagina noua goala</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 text-center">
+                <form action="#" method="POST" id="registerForm">
+                    <div class="form-row">
+                        <label class="labelRegistration">Name</label>
+                        <input type="text" class="form-control" placeholder="Ileana" id="nameid"></input>
+                        <small id="name_message">Must not containt special symbols</small>
+                    </div>
+                    <div class="form-row">
+                        <label class="labelRegistration">Surname</label>
+                        <input type="text" class="form-control" placeholder="Cosanzeana" id="surnameid"></input>
+                        <small id="surname_message">Must not containt special symbol</small>
+                    </div>
+                    <div class="form-row">
+                        <label class="labelRegistration">Email</label>
+                        <input type="text" class="form-control" placeholder="ileana.cosanzeana@gmail.com" id="emailid"></input>
+                        <small id="email_message">Must be a valid email</small>
+                    </div>
+                    <div class="form-row">
+                        <label class="labelRegistration">Password</label>
+                        <input type="password" class="form-control" placeholder="*******" id="passid"></input>
+                        <small id="pass_message">Must contain at least one number and one capital letter, and have 8 characters</small>
+                    </div>
+                    <div class="form-row">
+                        <label class="labelRegistration">Re-enter your password</label>
+                        <input type="password" class="form-control" placeholder="*******" id="repassid"></input>
+                        <small id="repass_message">Must match with the password</small>
+                    </div>
+                    <div class="form-row">
+                        <label class="labelRegistration">Phone</label>
+                        <input  type="text" class="form-control" placeholder="+37360879116/060879116/60879116" id="phoneid"></input>
+                        <small id="phone_message">Must be a valid Moldovian number</small>
+                    </div>
+                    <div class="form-row">
+                        <label class="labelRegistration">Male</label>
+                        <input class="radio" type="radio" id="male" name="gender" value="male">
+                    </div>
+                    <div class="form-row">
+                        <label class="labelRegistration">Female</label>
+                        <input class="radio" type="radio" id="female" name="gender" value="female">
+                    </div>
+                    <div class="form-row" >
+                        <label class="labelRegistration">Other</label>
+                        <input class="radio" type="radio" id="other" name="gender" value="other">
+                    </div>
+                    <button type="submit" class="btn btn-outline-success text-center btn-register">Success</button>
+                </form>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="registerValidation.js"></script>
 </html>
